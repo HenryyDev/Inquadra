@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  :root{
+    --blue-primary:#00BBC9;
+  --cinza-primary:#324B4E;
+  --cinza-secondary:#94B0B3;
+  --blue-secondary:#3A8FD7;
+  --transparence-primary:#cacaca;
+  }
+  
+  
+  a{
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+  
+  
+ 
+  .w-100 {
+    border-radius: 25px;}
+  .imagem-anuncio {
+    display: flex;
+    margin-left: 20px;
+  }
+ #txt-desc{
+  width: auto;
+  height: auto;
+ }
+
+  .desc-checkin {
+   
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-radius: 25px;
+    justify-content: space-around;
+  }
+  .desc {
+    height: auto;
+    padding: 20px;
+    margin-left: 20px;
+    
+    width: 70vw;
+    text-align: center;
+    align-items: center;
+    background-color: var(--transparence-primary);
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+
+  .calendario{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .react-datepicker__input-container input{
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+  }
+
+  .check-in {
+    width: 400px;
+    height: auto;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #cacaca;
+    margin-bottom: 20px;
+  }
+  .title-quadra{
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+ 
+  @media (max-width: 1200px) {
+   
+  .imagem-anuncio{
+    margin: 20px;
+   
+  }
+  
+    .desc-checkin {
+      flex-direction: column;
+    }
+    .desc {
+      width: 90%;
+    }
+    .check-in {
+      width: 90%;
+      margin-left: 20px;
+    }
+  }
