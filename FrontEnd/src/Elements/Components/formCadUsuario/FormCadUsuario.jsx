@@ -64,7 +64,7 @@ const CadUsuario = () => {
       const updatedValues = { ...prevValues, ddd: ddd, numero_t: numero };
 
       axios
-        .post('https://inquadra-finalversion-production.up.railway.app/users', updatedValues, {
+        .post("http://localhost:3000/users", updatedValues, {
           headers: {
             "Content-Type": "application/json",
           },

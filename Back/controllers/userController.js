@@ -5,8 +5,7 @@ const db = require('../db');
 // Criar um novo usuario
 exports.createUser = async (req, res) => {
     const { nome, email, senha, numero_t,ddd } = req.body;
-    res.header('Access-Control-Allow-Origin', 'https://inquadra-finalversion-nlqum7sm7-henrys-projects-75c338a9.vercel.app');
-    res.send(users);
+
     // Verifica se os campos obrigatórios foram fornecidos
     if (!nome || !email || !senha || !numero_t || !ddd) {
         return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
